@@ -6,7 +6,7 @@ import { db } from "@/db";
 const f = createUploadthing();
 
 export const ourFileRouter = {
-  imageUploader: f({ image: { maxFileSize: "4MB" } })
+  imageUploader: f({ image: { maxFileSize: "8MB" } })
     .input(z.object({ configId: z.string().optional() })) //We are installing zod because the image we upload happens to be an object
     .middleware(async ({ input }) => {
       return { input }; // We are taking the in the input we are passing it through the middleware

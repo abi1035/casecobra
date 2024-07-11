@@ -4,7 +4,7 @@ import {Body, Column, Container, Head, Heading, Hr, Html, Img, Preview, Row, Sec
 
 const OrderRecievedEmail =({shippingAddress,orderId, orderDate}:{shippingAddress:ShippingAddress, orderId:string,orderDate:string})=>{
 
-    const baseUrl=process.env.NODE_ENV==="development" ? "http://localhost:3000": "https://casecobra-xi-blond.vercel.app"
+    const baseUrl=process.env.NODE_ENV==="development" ? "http://localhost:3000": "https://casecobra-xi-blond.vercel.app/"
 
 
     return (
